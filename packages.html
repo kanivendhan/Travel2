@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+        body{
+            font-family: "Barlow Condensed";
+            background-color: aqua;
+        }
+        .box{
+            height: 300px;
+            width: 200px;
+            margin: 10px;
+            border-radius: 18px;
+            transition: 0.8s ease;
+        }
+        .box:hover{
+            transform: scale(1.1);
+        }
+        .boxes{
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            background: url(./Solo.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box2{
+            background: url(./Couples.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box3{
+            background: url(./Family.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box4{
+            background: url(./Friends.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .placeli{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .placeli ul{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+        }
+        .placeli ul li{
+            margin-right: 88px;
+            margin-left: 100px;
+        
+        }
+        @media all and (max-width:576px)
+        {
+            .boxes{
+                display:flex;
+                flex-direction:column;
+            }
+            .box{
+                margin: 10px;
+            }
+            .placeli{
+                display:none;
+            }
+            .boxes .box1 h2{
+            display:block;
+            }
+        }
+        .boxes .box1 h2{
+            display: none;
+        }
+        .placeli{
+            display: none;
+        }
+    </style>
+<body>
+    <center>
+    <h1>PACKAGES</h1>
+    </center>
+    <br><br><br>
+    <div class="boxes">
+        <div class="box box1"></div><br>
+        <h2>
+            SOLO PACKAGE
+        </h2>
+        <br> 
+        <div class="box box2"></div><br>
+        <h2>
+            PARTNER PACKAGE
+        </h2>
+        <br> 
+        <div class="box box3"></div><br>
+        <h2>
+            FAMILY PACKAGE
+        </h2>
+        <br> 
+        <div class="box box4"></div><br>
+        <h2>
+            FRIENDS PACKAGE
+        </h2>
+        <br> 
+    </div>
+    <div class="placeli">
+        <ul>
+            <li>SOLO PACKAGE</li>
+            <li>PARTNER PACKAGE</li>
+            <li>FAMILY PACKAGE</li>
+            <li>FRIENDS PACKAGE</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+        body{
+            font-family: "Barlow Condensed";
+            background-color: aqua;
+        }
+        .box{
+            height: 300px;
+            width: 200px;
+            margin: 10px;
+            border-radius: 18px;
+            transition: 0.8s ease;
+        }
+        .box:hover{
+            transform: scale(1.1);
+        }
+        .boxes{
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            background: url(./Thajmahal2.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box2{
+            background: url(./Paisa.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box3{
+            background: url(./China.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box4{
+            background: url(./Egypt2.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box5{
+            background: url(./Mountain.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .box6{
+            background: url(./Bluestatue.jpg)no-repeat;
+            background-size: cover;
+
+        }
+        .placeli{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .placeli ul{
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+        }
+        .placeli ul li{
+            margin-right: 88px;
+            margin-left: 100px;
+        
+        }
+        @media all and (max-width:576px)
+        {
+            .boxes{
+                display:flex;
+                flex-direction:column;
+            }
+            .box{
+                margin: 10px;
+            }
+            .placeli{
+                display:none;
+            }
+            .boxes .box1 h2{
+            display:block;
+            }
+        }
+        .boxes .box1 h2{
+            display: none;
+        }
+        .placeli{
+            display: none;
+        }
+    </style>
+<body>
+    <center>
+    <h1>TOURS</h1>
+    </center>
+    <br><br>
+    <div class="boxes">
+        <div class="box box1"></div><br>
+        <h2>
+            INDIA
+        </h2>
+        <br> 
+        <div class="box box2"></div><br>
+        <h2>
+            PISA
+        </h2>
+        <br> 
+        <div class="box box3"></div><br>
+        <h2>
+            CHINA
+        </h2>
+        <br> 
+        <div class="box box4"></div><br>
+        <h2>
+            EGYPT
+        </h2>
+        <br> 
+        <div class="box box5"></div><br>
+        <h2>
+            USA
+        </h2>
+        <br> 
+        <div class="box box6"></div><br>
+        <h2>
+            NEWYORK
+        </h2>
+        <br> 
+    </div>
+    <div class="placeli">
+        <ul>
+            <li>INDIA</li>
+            <li>PISA</li>
+            <li>CHINA</li>
+            <li>EGYPT</li>
+            <li>USA</li>
+            <li>NEWYORK</li>
+        </ul>
+    </div>
+</body>
+</html>
